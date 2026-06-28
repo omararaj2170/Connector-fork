@@ -6,7 +6,7 @@ import net.neoforged.moddevgradle.internal.RunGameTask
 plugins {
     java
     `maven-publish`
-    id("net.neoforged.moddev") version "2.0.140"
+    id("net.neoforged.moddev") version "2.0.141"
     id("com.gradleup.shadow") version "9.3.1" apply false
     id("me.modmuss50.mod-publish-plugin") version "0.5.+"
     id("net.neoforged.gradleutils") version "5.1.0"
@@ -49,7 +49,7 @@ val mod: SourceSet by sourceSets.creating
 val shade: Configuration by configurations.creating
 
 java {
-    toolchain.languageVersion.set(JavaLanguageVersion.of(21))
+    toolchain.languageVersion.set(JavaLanguageVersion.of(25))
     withSourcesJar()
 }
 
